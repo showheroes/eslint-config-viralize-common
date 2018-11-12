@@ -6,9 +6,17 @@
     "type": "git",
     "url": "https://github.com/Viralize/eslint-config-viralize-base"
   },
+  "scripts": {
+    "release": "release-it -n",
+    "release:minor": "release-it minor -n",
+    "release:major": "release-it major -n"
+  },
   "author": "Lorenzo Bugiani (lorenzo.bugiani@viralize.com)",
   "license": "MIT",
   "peerDependencies": {
     "eslint": "^5.9.0"
+  },
+  "devDependencies": {
+    "release-it": "^7.6.3"
   }
 }
