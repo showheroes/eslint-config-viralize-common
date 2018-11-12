@@ -1,0 +1,14 @@
+{
+  "name": "eslint-config-viralize-base",
+  "version": "0.0.0",
+  "description": "Commons eslint rules",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Viralize/eslint-config-viralize-base"
+  },
+  "author": "Lorenzo Bugiani (lorenzo.bugiani@viralize.com)",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^5.9.0"
+  }
+}
