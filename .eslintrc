@@ -38,7 +38,7 @@
             {
             "code": 80,
             "tabWidth": 4,
-            "ignorePattern": "^import|^export|^const .* = require('.*');$|'.*'[;|,]$|`.*`[;|,]$"
+            "ignorePattern": "^import|^export|^const .* = require('.*');$|'.*'[;|,]?$|`.*`[;|,]?$"
             }
         ]
     }
