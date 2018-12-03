@@ -9,7 +9,7 @@ const baseReleaseOptions = {
 
 const getLastTag = () => {
     return new Promise((resolve) => {
-        exec('git describe --abbrev=0 --tags', (error, stdout) => {
+        exec('git describe --tags `git rev-list --tags --max-count=1`', (error, stdout) => {
             if (error) {
                 // no tag found, first release.
                 resolve('0.0.0');
@@ -22,7 +22,7 @@ const getLastTag = () => {
 
 const checkNpmVersion = () => {
     return getLastTag().then((tag) => {
-        return semver.lte(version, tag);
+        return semver.eq(version, tag);
     });
 };
 
@@ -33,6 +33,7 @@ const release = (increment) => {
                 'deployed version. Please review what appened first.');
 
             process.exit(1);
+            return;
         }
         const options = Object.assign(baseReleaseOptions, { increment });
         releaseIt(options).then((output) => {
