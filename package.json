@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-viralize-base",
+  "version": "0.0.0",
+  "description": "Commons eslint rules",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Viralize/eslint-config-viralize-base"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "viralize",
+    "javascript"
+  ],
+  "author": "Lorenzo Bugiani (lorenzo.bugiani@viralize.com)",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "release:major": "node ./scripts/major",
+    "release:minor": "node ./scripts/minor",
+    "release:patch": "node ./scripts/patch"
+  },
+  "peerDependencies": {
+    "eslint": "^5.9.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "release-it": "^8.2.0",
+    "semver": "^5.6.0"
+  }
+}
