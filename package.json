@@ -17,7 +17,9 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "release:major": "node ./scripts/major"
+    "release:major": "node ./scripts/major",
+    "release:minor": "node ./scripts/minor",
+    "release:patch": "node ./scripts/patch"
   },
   "peerDependencies": {
     "eslint": "^5.9.0"
