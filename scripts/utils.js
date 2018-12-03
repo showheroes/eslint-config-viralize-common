@@ -33,6 +33,7 @@ const release = (increment) => {
                 'deployed version. Please review what appened first.');
 
             process.exit(1);
+            return;
         }
         const options = Object.assign(baseReleaseOptions, { increment });
         releaseIt(options).then((output) => {
