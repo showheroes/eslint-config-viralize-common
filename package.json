@@ -1,10 +1,10 @@
 {
-  "name": "eslint-config-viralize-base",
-  "version": "0.0.0",
+  "name": "eslint-config-viralize-common",
+  "version": "1.0.0",
   "description": "Commons eslint rules",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Viralize/eslint-config-viralize-base"
+    "url": "https://github.com/Viralize/eslint-config-viralize-common"
   },
   "keywords": [
     "eslint",

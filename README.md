@@ -1,4 +1,4 @@
-# eslint-config-viralize-base
+# eslint-config-viralize-common
 
 Commons eslint rules used by all Viralize config files.
 
@@ -9,20 +9,20 @@ This repository is not intented to be use as a standalone eslint config for prod
 1. Install the correct versions of each package, which are listed by the command:
 
   ```sh
-  npm info "eslint-config-viralize-base@latest" peerDependencies
+  npm info "eslint-config-viralize-common@latest" peerDependencies
   ```
 
   If using **npm 5+**, use this shortcut
 
   ```sh
-  npx install-peerdeps --dev eslint-config-viralize-base
+  npx install-peerdeps --dev eslint-config-viralize-common
   ```
 
   If using **npm < 5**, Linux/OSX users can run
 
   ```sh
   (
-    export PKG=eslint-config-viralize-base;
+    export PKG=eslint-config-viralize-common;
     npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
   )
   ```
@@ -31,7 +31,7 @@ This repository is not intented to be use as a standalone eslint config for prod
 
   ```sh
   npm install -g install-peerdeps
-  install-peerdeps --dev eslint-config-viralize-base
+  install-peerdeps --dev eslint-config-viralize-common
   ```
 
-2. Add `"extends": "viralize-base"` to your .eslintrc.
+2. Add `"extends": "viralize-common"` to your .eslintrc.

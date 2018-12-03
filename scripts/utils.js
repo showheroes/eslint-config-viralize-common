@@ -22,20 +22,24 @@ const getLastTag = () => {
 };
 
 const release = (increment) => {
-    return getLastTag().then((tag) => {
-        if (!semver.eq(version, tag)) {
-            process.stderr.write('package.json version differs from last' +
+    getLastTag()
+        .then((tag) => {
+            if (!semver.eq(version, tag)) {
+                process.stderr.write('package.json version differs from last' +
                 'deployed version. Please review what appened first.');
 
-            process.exit(1);
-            return;
-        }
+                process.exit(1);
+                return;
+            }
 
-        const options = Object.assign(baseReleaseOptions, { increment });
-        releaseIt(options).then((output) => {
-            process.stdout.write(output);
+            const options = Object.assign(baseReleaseOptions, { increment });
+            releaseIt(options).then((output) => {
+                process.stdout.write(output);
+            });
+        })
+        .catch((err) => {
+            process.stderr.write(err);
         });
-    });
 };
 
 module.exports = {
