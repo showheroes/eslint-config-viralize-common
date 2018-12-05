@@ -9,7 +9,7 @@ const baseReleaseOptions = {
 
 const getLastTag = () => {
     return new Promise((resolve) => {
-        const command = 'git describe --tags git rev-list --tags --max-count=1`';
+        const command = 'git describe --tags `git rev-list --tags --max-count=1`';
         exec(command, (error, stdout) => {
             if (error) {
                 // no tag found, first release.
@@ -34,7 +34,7 @@ const release = (increment) => {
 
             const options = Object.assign(baseReleaseOptions, { increment });
             releaseIt(options).then((output) => {
-                process.stdout.write(output);
+                process.stdout.write(`released vesion ${output.version}`);
             });
         })
         .catch((err) => {
