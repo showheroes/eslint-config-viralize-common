@@ -28,3 +28,7 @@ node_modules
 
 # Various
 .vscode
+*~
+.DS_Store
+.Spotlight-V100
+.Trashes
