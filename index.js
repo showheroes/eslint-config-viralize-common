@@ -7,6 +7,7 @@ module.exports = {
         'max-len': ['error', {
             code: 80,
             tabWidth: 4,
+            ignoreUrls: true,
             ignorePattern: '^import|^export|^const .* = require(\'.*\');$|\'.*\'[;|,]?$|`.*`[;|,]?$'
         }],
         'no-console': 'warn',
