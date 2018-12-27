@@ -8,3 +8,7 @@
 
 - deprecated version 1.0.0. due to config error
 - fixed config
+
+## 3.0.0
+
+- ignored urls from max-len rule
