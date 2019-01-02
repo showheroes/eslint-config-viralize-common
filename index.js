@@ -13,7 +13,7 @@ module.exports = {
         'no-console': 'warn',
         'no-debugger': 'warn',
         'no-underscore-dangle': 'off',
-        'operator-linebreak': ['error', 'after'],
+        'operator-linebreak': ['error', 'before'],
         quotes: ['error', 'single'],
         semi: ['error', 'always']
     }
