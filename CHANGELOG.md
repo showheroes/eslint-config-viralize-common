@@ -1,14 +1,14 @@
 # Changelog
 
-## 1.0.0
+## 3.0.0
 
-- first version of common rules
+- ignored urls from max-len rule
 
 ## 2.0.0
 
 - deprecated version 1.0.0. due to config error
 - fixed config
 
-## 3.0.0
+## 1.0.0
 
-- ignored urls from max-len rule
+- first version of common rules
