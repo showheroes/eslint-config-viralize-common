@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.0
+
+- Change operator-linebreak rule to break line before operator
+
 ## 3.0.0
 
 - ignored urls from max-len rule
