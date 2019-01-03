@@ -1,5 +1,17 @@
 # Changelog
 
+## 5.0.3
+
+- Update CHANGELOG.md
+
+## 5.0.2
+
+- Change release command to update package-lock.json on release
+
+## 5.0.1
+
+- Fix package-lock.json version
+
 ## 5.0.0
 
 - Change max line length to 100 char
