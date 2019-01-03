@@ -5,7 +5,7 @@ module.exports = {
         indent: ['error', 4, { SwitchCase: 1 }],
         'linebreak-style': ['error', 'unix'],
         'max-len': ['error', {
-            code: 80,
+            code: 100,
             tabWidth: 4,
             ignoreUrls: true,
             ignorePattern: '^import|^export|^const .* = require(\'.*\');$|\'.*\'[;|,]?$|`.*`[;|,]?$'
