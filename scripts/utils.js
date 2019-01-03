@@ -4,7 +4,8 @@ const semver = require('semver');
 const { version } = require('../package.json');
 
 const baseReleaseOptions = {
-    'non-interactive': true
+    'non-interactive': true,
+    pkgFiles: ['package.json', 'package-lock.json']
 };
 
 const getLastTag = () => {
@@ -26,7 +27,7 @@ const release = (increment) => {
         .then((tag) => {
             if (!semver.eq(version, tag)) {
                 process.stderr.write('package.json version differs from last' +
-                'deployed version. Please review what appened first.');
+                'deployed version. Please review what happened first.');
 
                 process.exit(1);
                 return;
