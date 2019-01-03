@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.0.0
+
+- Change max line length to 100 char
+
 ## 4.0.0
 
 - Change operator-linebreak rule to break line before operator
