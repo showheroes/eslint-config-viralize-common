@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.0.0
+
+- changed "operator-linebreak" rule: "=" char placed at the end of a line
+
 ## 5.0.3
 
 - Update CHANGELOG.md

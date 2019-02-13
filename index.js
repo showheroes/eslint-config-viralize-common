@@ -13,7 +13,7 @@ module.exports = {
         'no-console': 'warn',
         'no-debugger': 'warn',
         'no-underscore-dangle': 'off',
-        'operator-linebreak': ['error', 'before'],
+        'operator-linebreak': ['error', 'before', { "overrides": { "=": "after" } }],
         quotes: ['error', 'single'],
         semi: ['error', 'always']
     }
