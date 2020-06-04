@@ -1,5 +1,24 @@
 # Changelog
 
+
+## 7.0.3
+
+- Update changelog
+
+## 7.0.2
+
+- Additional release to fix failed published release on npm
+
+## 7.0.1
+
+- Update all library to last eslint v5 compatible release
+
+## 7.0.0
+
+- Minor code style fix
+- Update eslint-plugin-import@2.20.2
+- Update release-it@13.6.2 to avoid security issues
+
 ## 6.0.0
 
 - changed "operator-linebreak" rule: "=" char placed at the end of a line
