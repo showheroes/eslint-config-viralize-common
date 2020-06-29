@@ -1,5 +1,8 @@
 # Changelog
 
+## 7.1.0
+
+- Peer dependencies are now compatible with eslint 6 & 7
 
 ## 7.0.3
 
